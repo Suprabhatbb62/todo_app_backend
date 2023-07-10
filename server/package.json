@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo 'Server build script placeholder'",
+    "build": "echo 'No build step required for the server'",
     "start": "node index.js"
   },
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
