@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "react-scripts build"
+    "build": "echo 'Server build script placeholder'",
+    "start": "node index.js"
   },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +16,5 @@
     "express": "^4.18.2",
     "pg": "^8.11.1",
     "react-scripts": "^5.0.1"
-  }
+  }  
 }
