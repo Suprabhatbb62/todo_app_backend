@@ -1,0 +1,12 @@
+services:
+  - name: client
+    env:
+      - key: NODE_ENV
+        value: production
+    buildCommand: npm run build
+    publish: client/build
+
+  - name: server
+    env:
+      - key: PORT
+        value: 5000
