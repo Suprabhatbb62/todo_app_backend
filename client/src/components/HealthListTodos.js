@@ -8,7 +8,7 @@ const HealthListTodos = () => {
   // Delete todo function
   const deleteTodo = async (id) => {
     try {
-      await fetch(`http://localhost:5000/todos/health/${id}`, {
+      await fetch(`https://todo-backend-app-wprl.onrender.com/todos/health/${id}`, {
         method: "DELETE",
       });
 
@@ -20,7 +20,7 @@ const HealthListTodos = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos/health");
+      const response = await fetch("https://todo-backend-app-wprl.onrender.com/todos/health");
       const jsonData = await response.json();
 
       setTodos(jsonData);
@@ -37,7 +37,7 @@ const HealthListTodos = () => {
     <Fragment>
       <table className="table table-bordered table-hover mt-3">
         <thead className="thead-dark">
-          <tr class="table-warning">
+          <tr className="table-warning">
             <th>Task</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -45,7 +45,7 @@ const HealthListTodos = () => {
         </thead>
         <tbody>
           {todos.map((todo) => (
-            <tr key={todo.todo_id} class="table-info">
+            <tr key={todo.todo_id} className="table-info">
               <td>{todo.description}</td>
               <td>
                 <EditTodo todo={todo} behavior="health" />
