@@ -9,7 +9,7 @@ const EditTodo = ({ todo, behavior }) => {
     try {
       const body = { description };
       const response = await fetch(
-        `https://todo-backend-app-wprl.onrender.com/todos/${behavior}/${todo.todo_id}`,
+        `https://backend-cq55.onrender.com/todos/${behavior}/${todo.todo_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

@@ -7,7 +7,7 @@ const TechnicalInputTodo = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch("https://todo-backend-app-wprl.onrender.com/todos/technical", {
+      const response = await fetch("https://backend-cq55.onrender.com/todos/technical", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

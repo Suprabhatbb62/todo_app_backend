@@ -7,7 +7,7 @@ const HealthInputTodo = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch("https://todo-backend-app-wprl.onrender.com/todos/health", {
+      const response = await fetch("https://backend-cq55.onrender.com/todos/health", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

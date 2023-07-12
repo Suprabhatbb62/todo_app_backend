@@ -8,7 +8,7 @@ const PhysicalListTodos = () => {
   // Delete todo function
   const deleteTodo = async (id) => {
     try {
-      await fetch(`https://todo-backend-app-wprl.onrender.com/todos/physical/${id}`, {
+      await fetch(`https://backend-cq55.onrender.com/todos/physical/${id}`, {
         method: "DELETE",
       });
 
@@ -20,7 +20,7 @@ const PhysicalListTodos = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("https://todo-backend-app-wprl.onrender.com/todos/physical");
+      const response = await fetch("https://backend-cq55.onrender.com/todos/physical");
       const jsonData = await response.json();
 
       setTodos(jsonData);
